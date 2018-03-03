@@ -1,0 +1,18 @@
+# Site settings
+title: Roquib | Blog
+email: roquib01@outlook.com
+description: "Course materials and notes"
+baseurl: ""
+url: "http://roquib.github.io"
+twitter_username: roquib01
+github_username:  roquib
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
