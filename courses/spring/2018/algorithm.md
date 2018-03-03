@@ -174,15 +174,15 @@ so, we can say, f(n)= Θ(g(n))
 
 <a name="selection_sort"></a>
 
-# Selection Sort
+#### Selection Sort
 
 * In this technique, we find the smallest-element and place it in the appropirate position
 * If we have n elements then it requires (n-1) pass to sort the elements
 ### Array
 
-index | 0 | 1 | 2 | 3 | 4
---- | --- | --- | ---| --- | ---
-Elements|3 | 7| 6 |2 | 1
+index   | 0 | 1 | 2 | 3 | 4
+        --- | --- | --- | ---| --- | ---
+elements  |3 | 7| 6 |2 | 1
 
     Here, we have 5 elements . so we need (5-1) = 4 pass to sort the array
 
@@ -190,41 +190,43 @@ Elements|3 | 7| 6 |2 | 1
 
 In pass1 smallest element is searched between A[0] to A[4] and swapped with A[0]
 
-index | 0 | 1 | 2 | 3 | 4
---- | --- | --- | ---| --- | ---
-Elements|3 | 7| 6 |2 | 1
+index   | 0 | 1 | 2 | 3 | 4
+        --- | --- | --- | ---| --- | ---
+elements    |3 | 7| 6 |2 | 1
 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 index | 0 | 1 | 2 | 3 | 4
---- | --- | --- | ---| --- | ---
-Elements|1 | 7| 6 |2 | 3
+        --- | --- | --- | ---| --- | ---
+elements    |1 | 7| 6 |2 | 3
 
 **Pass2:**
 
 In pass 2 smallest element is searched between A[1] to A[4] and swapped with A[1] 
 
-index | 0 | 1 | 2 | 3 | 4
---- | --- | --- | ---| --- | ---
-Elements|1 | 2| 6 |7 | 3
+index   | 0 | 1 | 2 | 3 | 4
+        --- | --- | --- | ---| --- | ---
+Elements    |1 | 2| 6 |7 | 3
 
 **Pass3:**
 
 In pass 3 smallest element is searched between A[2] to A[4] and swapped with A[2]
 
-index | 0 | 1 | 2 | 3 | 4
---- | --- | --- | ---| --- | ---
-Elements|1 | 2| 3 |7 |6 
+index  | 0 | 1 | 2 | 3 | 4
+        --- | --- | --- | ---| --- | ---
+Elements    |1 | 2| 3 |7 |6 
 
 **Pass4:**
 
 In pass 4 smallest element is searched between A[3] to A[4] and swapped with A[3]
 
-index | 0 | 1 | 2 | 3 | 4
---- | --- | --- | ---| --- | ---
-Elements|1|2|3|6|7
+index   | 0 | 1 | 2 | 3 | 4
+        --- | --- | --- | ---| --- | ---
+elements |1|2|3|6|7
 
 <a name="selection_sort_python"> </a>
+
+#### Selection Sort in python
 
 ```python
 # Array elements
@@ -244,3 +246,18 @@ print("Sorted Array:")
 for i in range(len(A)):
     print("%d" %A[i]),
 ```
+
+    Sorted Array:
+    1
+    2
+    3
+    6
+    7
+
+#### Selection Sort in C++
+
+<a href="/courses/spring2018/code/#selection_sort"><strong>Selection Sort in c++</strong></a>
+
+#### Insertion Sort in C++
+
+<a href="/courses/spring2018/code/#insertion_sort"><strong>Insertion Sort in c++</strong></a>
