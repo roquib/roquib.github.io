@@ -254,6 +254,22 @@ for i in range(len(A)):
     6
     7
 
+<a name="space_complexity"></a>
+### Space Complexity
+
+Analysis of space complexity of an algorithm or program is the ? amout of memory it needs to run to completion some of the reasons for swapping 
+
+##### space complexity are-
+
+    1. Swapping without third variable
+    2. longest number finding with ternary operator
+
+* If the program is to run variable on multiuser system,it may be required to specify the amount of memory to be allocated to program
+
+* To Know in advance that sufficient memory is available to run the program
+
+* Can be used to estimate the size of the largest problem that a program can solve.
+
 #### Selection Sort in C++
 
 <a href="/courses/spring2018/code/#selection_sort"><strong>Selection Sort in c++</strong></a>
