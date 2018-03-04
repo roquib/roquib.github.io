@@ -296,14 +296,14 @@ for(k=p to r)
 #### explanation
 
 <div class="fig figcenter fighighlight">
-    <img src="/assets/merge_sort2.png" width="40%">
-    <img src="/assets/merge_sort1.png" width="40%">
+    <img src="/assets/merge_sort2.png" width="100%">
+    <img src="/assets/merge_sort1.png" width="100%">
     <div class="figcaption">
       dividing array elements
     </div>
 </div>
 
-### Knapsack Problem
+## Knapsack Problem
 
 Given, total knapsack weight = 16
 
@@ -322,7 +322,7 @@ Array of Profit (p1,p2,p3,p4,p5,p6) = (3,5,8,6,1,2)
 |I<sub>3</sub> |3 |1 | 0.33|
 |I<sub>2</sub> |2 | 2|0.20 |
 
-##### Knapsack Solution
+## Knapsack Solution
 
 | Item | weight | Profit | Commutative weight | Benefit |
 | --- | --- | --- | --- | --- |
@@ -332,7 +332,7 @@ Array of Profit (p1,p2,p3,p4,p5,p6) = (3,5,8,6,1,2)
 |I<sub>1</sub> |6 |6 | 15| 22 |
 |I<sub>3</sub> |1 |0.33 | 16| 22.33 |
 
-#### Binary Search Algorithm
+## Binary Search Algorithm
  Binary(data, lb, ub, item, loc)
 
  [Here ,data is a sorted array, where lower bound is 'LB',upper bound ='UB',item = identified data element]
@@ -362,7 +362,7 @@ Beg, End, Mid 3 variables => where beg = 1st segment, end = end segment and mid 
 
 <a name="bubble_sort"></a>
 
-### Bubble Sort
+## Bubble Sort
 
 let data elements A[1] A[2] .... A[N]
 
@@ -384,17 +384,20 @@ if A[1] < A[2] then no change,no swapping
  |index | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
  |--- | --- | --- | --- | ---| --- | --- | --- | ---|
  |elements | 32 | 27 | 51 | 85 | 66 |23 | 13 | 57 |
+
  3. 51 < 85 , now swap
  4. 85 > 66 , swapping
 
  |index | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
  |--- | --- | --- | --- | ---| --- | --- | --- | ---|
  |elements | 32 | 27 | 51 | 66 | 85 |23 | 13 | 57 |
+
  5. 85 > 23 , swapping
 
  |index | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
  |--- | --- | --- | --- | ---| --- | --- | --- | ---|
  |elements | 32 | 27 | 51 | 66 | 23 |85 | 13 | 57 |
+
  6. 85 > 13, swapping
 
  |index | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
@@ -421,7 +424,7 @@ if A[1] < A[2] then no change,no swapping
           then exchange A[j] <-> A[j-1]
 ```
 
-#### Longest Increasing Subsequence
+## Longest Increasing Subsequence
 
 Given Sequence : 1 , 6, 2, 4, 5, 0
 
@@ -438,10 +441,10 @@ Increasing Sequence : (1),(6),(2),(4),(5),(0)
 LIS = 1   2  2  3  4  1
 
 so answer = maxof(LIS) = 4
-#### Selection Sort in C++
+### Selection Sort in C++
 
 <a href="/courses/spring2018/code/#selection_sort"><strong>Selection Sort in c++</strong></a>
 
-#### Insertion Sort in C++
+### Insertion Sort in C++
 
 <a href="/courses/spring2018/code/#insertion_sort"><strong>Insertion Sort in c++</strong></a>
