@@ -1,4 +1,0 @@
-[submodule "presentation/reveal.js"]
-	path = presentation/reveal.js
-	url = https://github.com/hakimel/reveal.js.git
-	branch = master
