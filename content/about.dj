@@ -1,5 +1,10 @@
 # About
 
-I'm Abdur Roquib Pramanik. This blog is where I write down what I learn at university: course theory, code, and the things I work out along the way.
+![Abdur Roquib Pramanik](/assets/roquib.jpg){.about-ava width=128}
+I'm Abdur Roquib Pramanik, a senior software engineer in Bangladesh. I build web products and the systems that keep them running.
 
-If you have feedback on anything here, email me at [roquib01@outlook.com](mailto:roquib01@outlook.com), or find me on [GitHub](https://github.com/roquib).
+Most of my days go to [Prayers Connect](https://prayersconnect.com), where I work on the backend and frontend of a platform for prayer times and mosques. I'm also a founding engineer at [MeetPure Events](https://meetpure.events), an event platform.
+
+Lately I've been working on AI-assisted engineering, and learning Rust. I write about both, along with the backend, deployment, and production problems that come with the job.
+
+My resume is [here](/cv.html).

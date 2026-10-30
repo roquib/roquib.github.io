@@ -7,7 +7,7 @@ import * as t from "./templates.mjs";
 
 const OUT = "out/www";
 const POSTS = "content/posts";
-const PAGES = ["about"];
+const PAGES = ["about", "cv"];
 
 async function main() {
   const [command, arg] = process.argv.slice(2);
@@ -137,11 +137,15 @@ function serve(port) {
     }
   }).listen(port, () => console.log(`serving http://localhost:${port}`));
 
+  // Rebuild in a fresh process: a long-running one keeps the old modules loaded.
   let timer;
   const rebuild = () => {
     clearTimeout(timer);
     timer = setTimeout(() => {
-      build().catch((err) => console.error(err));
+      Bun.spawn(["bun", "src/build.mjs", "build"], {
+        stdout: "inherit",
+        stderr: "inherit",
+      });
     }, 100);
   };
   for (const dir of ["content", "src"]) {

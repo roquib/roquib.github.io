@@ -2,10 +2,17 @@ export const SITE = {
   title: "Roquib",
   url: "https://roquib.github.io",
   author: "Abdur Roquib Pramanik",
-  description: "Notes on what I learn at university: course theory, code, and things I work out along the way.",
-  email: "roquib01@outlook.com",
-  github: "roquib",
-  repo: "roquib.github.io",
+  description:
+    "Senior software engineer building products with AI-assisted engineering. TypeScript, NestJS, Next.js, Rails, and PostgreSQL, and learning Rust.",
+  // Source repo, taken from the git remote. Used only for the "Edit this post" link.
+  repo: "https://github.com/roquib/roquib.github.io",
+  // Each link stays off the site until the owner confirms it (verified: true).
+  links: [
+    { label: "GitHub", url: "https://github.com/roquib", verified: true },
+    { label: "LinkedIn", url: "https://linkedin.com/in/abdur-roquib", verified: true },
+    { label: "X", url: "https://x.com/roquib01", verified: false },
+    { label: "Email", url: "mailto:roquib01@gmail.com", verified: true },
+  ],
 };
 
 export function esc(value) {
@@ -41,6 +48,7 @@ function layout({ title, description, path, body }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(page_title)}</title>
 <meta name="description" content="${esc(description)}">
+<meta name="author" content="${esc(SITE.author)}">
 <link rel="canonical" href="${SITE.url}${path}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/atom+xml" title="${esc(SITE.title)}" href="${SITE.url}/feed.xml">
@@ -53,8 +61,8 @@ function layout({ title, description, path, body }) {
 <nav>
 <a href="/">Posts</a>
 <a href="/about.html">About</a>
+<a href="/cv.html">CV</a>
 <a href="/feed.xml">RSS</a>
-<a href="https://github.com/${SITE.github}">GitHub</a>
 </nav>
 </div>
 </header>
@@ -64,7 +72,14 @@ ${body}
 <footer class="site-footer">
 <div class="wrap">
 <p>&copy; ${new Date().getFullYear()} ${esc(SITE.author)}</p>
-<p><a href="mailto:${SITE.email}">${esc(SITE.email)}</a></p>
+<p>
+<a href="/feed.xml">RSS</a>${
+    SITE.links
+      .filter((link) => link.verified)
+      .map((link) => ` · <a href="${link.url}">${esc(link.label)}</a>`)
+      .join("")
+  }
+</p>
 </div>
 </footer>
 </body>
@@ -85,8 +100,7 @@ ${time_html(post.date, "meta")}
     title: SITE.title,
     description: SITE.description,
     path: "/",
-    body: `<p class="lede">${esc(SITE.description)}</p>
-${posts.length ? `<ul class="post-list">\n${items}\n</ul>` : "<p>No posts yet.</p>"}`,
+    body: posts.length ? `<ul class="post-list">\n${items}\n</ul>` : "<p>No posts yet.</p>",
   });
 }
 
@@ -98,7 +112,7 @@ export function post_page(post) {
     body: `<article class="post">
 ${post.html}
 </article>
-<p class="post-footer"><a href="https://github.com/${SITE.github}/${SITE.repo}/edit/master/${post.src}">Edit this post</a></p>
+<p class="post-footer"><a href="${SITE.repo}/edit/master/${post.src}">Edit this post</a></p>
 <p class="back"><a href="/">&larr; All posts</a></p>`,
   });
 }

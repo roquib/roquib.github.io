@@ -125,7 +125,8 @@ nav a:hover {
   text-decoration: none;
 }
 
-main {
+/* Set on main.wrap, after .wrap, so the top and bottom spacing isn't reset by .wrap's padding shorthand. */
+main.wrap {
   min-height: 70vh;
   padding-top: 3rem;
   padding-bottom: 4rem;
@@ -267,6 +268,17 @@ blockquote p:last-child {
 
 figure {
   margin: 1.75rem 0;
+}
+
+/* Portrait on the About page, floated right so the intro text wraps around it. */
+article img.about-ava {
+  float: right;
+  width: 128px;
+  height: 128px;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 50%;
+  border: 3px solid var(--border);
+  object-fit: cover;
 }
 
 figure img {

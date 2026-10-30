@@ -1,0 +1,99 @@
+# Resume
+
+Senior software engineer with 7+ years of professional experience building web applications. I started with PHP and Laravel, moved into JavaScript and React, and now work mostly in TypeScript, NestJS, Next.js, and Ruby on Rails. I'm a Senior Software Engineer at Prayers Connect and a part-time Founding Engineer at MeetPure Events. I'm learning Rust.
+
+Experience is counted from my first paid role (Freewire BD, September 2019). There are no gaps between roles up to today.
+
+## Experience
+
+### Senior Software Engineer, Prayers Connect
+
+`Full-time · Nov 2024 – present · 2 yrs`
+
+- Porting core API endpoints from a Rails backend to NestJS, keeping existing behavior.
+- Fixed a recurring database permission problem on a shared Rails database by replacing per-feature grants with one default-privileges setup. This gave up a read-only boundary on purpose.
+- Worked on timezone-aware caching for per-mosque prayer data, and Next.js ISR refreshes per timezone.
+- Worked on Redis caching, GraphQL subscriptions for prayer times and events, and background jobs with Solid Queue.
+- Investigated production 503 errors tied to Kubernetes node changes, and certificate issuance for the platform's domains.
+
+### Founding Engineer, MeetPure Events
+
+`Part-time · Dec 2024 – present · 1 yr 11 mos`
+
+- Working on an event and ticketing platform built with Rails, Haml, Turbo, and Stimulus, with Next.js for the landing page.
+
+### SamuraiGeeks
+
+`Full-time · Jan 2020 – Nov 2024 · 4 yrs 11 mos`
+
+- Senior Software Engineer, Jan 2023 – Nov 2024 · 1 yr 11 mos
+- Software Engineer, Jan 2020 – Dec 2022 · 3 yrs
+
+- Built a report verification system for RUET, with QR code generation for test verification, image storage on AWS S3, and automated email and SMS notifications.
+- Developed a lab product stock management system with real-time stock tracking and a product ledger.
+- Built a voter candidate information management system, with a PHP front end and an AngularJS backend on MongoDB.
+- Restructured multiple modules within two months to meet the product roadmap.
+- Improved the performance of a legacy codebase.
+- Set up CI/CD with GitHub Actions to ship updates within minutes.
+- Wrote documentation for incident reports, engineering workflows, and onboarding. I estimate it roughly doubled team productivity.
+
+Tech: PHP, Laravel, MySQL, PostgreSQL, JavaScript, jQuery, React, Vue.js, Inertia.js, Livewire, WordPress, Tailwind CSS, AWS, Docker, Android, CodeIgniter.
+
+### Software Engineer, Prayers Connect
+
+`Full-time · Jul 2021 – Dec 2022 · 1 yr 6 mos`
+
+PrayersConnect is a platform that helps Muslims find local mosques and prayer locations, view prayer times, and find community events.
+
+- Converted the PrayersConnect site from Ruby on Rails to Next.js, and built the Next.js architecture from the start to production.
+- Worked on the admin panel for mosque management.
+- Reviewed code to keep quality high.
+- Built the PrayersConnect mobile app, with 1,000+ downloads on Android and iOS.
+
+Tech: Next.js, React, Nativebase, MUI, Jest, Expo, Redux, GitHub CI/CD, Sentry, Ruby on Rails, TypeScript.
+
+### Software Engineer, ModernSoft LLC (through SamuraiGeeks)
+
+`Jan 2023 – Feb 2024 · 1 yr 2 mos`
+
+- Built RESTful APIs for a restaurant ordering application on Laravel, with a multi-tenant package serving 1,000+ shops.
+- Automated product catalog syncing from two point-of-sale systems.
+- Cut response times from a few seconds to a few hundred milliseconds by adding caching to reduce queries.
+- Integrated third-party APIs and webhooks, including Matomo Analytics, Stripe, a payment gateway, and Twilio SMS.
+- Built a static-generated site with Nextra and Contentful as a headless CMS.
+- Converted HTML sites to React with a FastAPI backend.
+
+Tech: PHP, Laravel, React, MySQL, Next.js, Nextra, Redis, Docker, PHPUnit, RESTful APIs.
+
+### Software Engineer, ElmulQuran
+
+`Part-time · Sep 2020 – Oct 2020 · 2 mos`
+
+- Designed and built the ElmulQuran app, used by 1,000+ paying users.
+- Led development of the back-end API and services.
+
+Tech: PHP, Laravel, MySQL, JavaScript, React, React Native.
+
+### Software Engineer (contract), Freewire BD
+
+`Sep 2019 – Dec 2020 · 1 yr 4 mos`
+
+- Designed and built a point-of-sale application with Laravel and Vue.js.
+
+Tech: PHP, Laravel, MySQL, JavaScript, Vue.js.
+
+## Skills
+
+- **Backend:** TypeScript, NestJS, Node.js, Ruby on Rails, PHP, Laravel, GraphQL, CodeIgniter
+- **Frontend:** JavaScript, React, Next.js, Vue.js, Tailwind CSS
+- **Data and infrastructure:** PostgreSQL, MySQL, Redis, Docker, Kubernetes, AWS, Cloudflare, Linux server administration, CI/CD
+- **Learning:** Rust, systems programming
+
+## Education
+
+- **B.Sc. in Computer Science and Engineering**, Uttara University, 2019. CGPA 3.90.
+
+## Competitions
+
+- Participated in the ACM ICPC 2016 Regional Contest.
+- Uri Online Judge profile: [urionlinejudge.com.br/judge/en/profile/137165](https://www.urionlinejudge.com.br/judge/en/profile/137165)
