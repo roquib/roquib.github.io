@@ -56,6 +56,8 @@ async function build() {
     filter: (src) => !basename(src).startsWith("."),
   });
   await cp("content/favicon.svg", join(OUT, "favicon.svg"));
+  // Keeps the custom domain set on GitHub Pages across Actions deploys.
+  await cp("content/CNAME", join(OUT, "CNAME"));
   console.log(`built ${posts.length} posts into ${OUT}`);
 }
 

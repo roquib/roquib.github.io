@@ -1,6 +1,6 @@
 export const SITE = {
   title: "Roquib",
-  url: "https://roquib.github.io",
+  url: "https://abdurroquib.com",
   author: "Abdur Roquib Pramanik",
   description:
     "Senior software engineer building products with AI-assisted engineering. TypeScript, NestJS, Next.js, Rails, and PostgreSQL, and learning Rust.",
