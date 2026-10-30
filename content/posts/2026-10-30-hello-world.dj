@@ -1,0 +1,26 @@
+# Hello, world
+
+This is the first post on the new version of the blog. Posts are plain text files written in [Djot](https://djot.net), and a small Node script turns them into HTML.
+
+Here is a short code sample, highlighted at build time:
+
+{cap="Binary search over a sorted array"}
+```js
+function binarySearch(items, target) {
+  let lo = 0;
+  let hi = items.length - 1;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    if (items[mid] === target) return mid;
+    if (items[mid] < target) lo = mid + 1;
+    else hi = mid - 1;
+  }
+  return -1;
+}
+```
+
+::: note
+Notes, warnings and questions are rendered as callouts. Use `::: warn` or `::: quiz` for the other kinds.
+:::
+
+To start a new post, run `npm run new -- your-slug`. It creates a dated file in `content/posts`.

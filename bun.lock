@@ -1,0 +1,18 @@
+{
+  "lockfileVersion": 2,
+  "configVersion": 0,
+  "workspaces": {
+    "": {
+      "name": "roquib-blog",
+      "dependencies": {
+        "@djot/djot": "0.3.2",
+        "highlight.js": "11.12.0",
+      },
+    },
+  },
+  "packages": {
+    "@djot/djot": ["@djot/djot@0.3.2", "", { "bin": { "djot": "lib/cli.js" } }, "sha512-joMKR24B8rxueyFiJbpZAqEiypjvOyzTxzkhyr0q5mM/sUBaOD3unna/9IxtOotFugViyYlkIRaiXg3xM//zxg=="],
+
+    "highlight.js": ["highlight.js@11.12.0", "", {}, "sha512-nbfWpyRMcMrPMmDwJB+dhX/eiaPKtc2RB+0QZskqJ3WjRA/FDS0e9hZrx8EC/lbEv8gXy98FcDbNa/dspAaJMg=="],
+  }
+}
