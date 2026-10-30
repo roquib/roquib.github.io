@@ -3,6 +3,7 @@ import { createServer } from "node:http";
 import { cp, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { basename, dirname, extname, join, resolve, sep } from "node:path";
 import { render_doc } from "./djot.mjs";
+import { fill_durations } from "./durations.mjs";
 import * as t from "./templates.mjs";
 
 const OUT = "out/www";
@@ -40,7 +41,7 @@ async function build() {
   }
 
   for (const name of PAGES) {
-    const source = await readFile(`content/${name}.dj`, "utf8");
+    const source = fill_durations(await readFile(`content/${name}.dj`, "utf8"));
     const { html, title, summary } = render_doc(source);
     if (!title) throw new Error(`content/${name}.dj needs a level-1 heading`);
     await write(

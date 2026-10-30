@@ -1,6 +1,6 @@
 # Resume
 
-Senior software engineer with 7+ years of professional experience building web applications. I started with PHP and Laravel, moved into JavaScript and React, and now work mostly in TypeScript, NestJS, Next.js, and Ruby on Rails. I'm a Senior Software Engineer at Prayers Connect and a part-time Founding Engineer at MeetPure Events. I'm learning Rust.
+Senior software engineer with {{experience 2019-09}} of professional experience building web applications. I started with PHP and Laravel, moved into JavaScript and React, and now work mostly in TypeScript, NestJS, Next.js, and Ruby on Rails. I'm a Senior Software Engineer at Prayers Connect and a part-time Founding Engineer at MeetPure Events. I'm learning Rust.
 
 Experience is counted from my first paid role (Freewire BD, September 2019). There are no gaps between roles up to today.
 
@@ -8,7 +8,7 @@ Experience is counted from my first paid role (Freewire BD, September 2019). The
 
 ### Senior Software Engineer, Prayers Connect
 
-`Full-time · Nov 2024 – present · 2 yrs`
+`Full-time · Nov 2024 – present · {{duration 2024-11 now}}`
 
 - Porting core API endpoints from a Rails backend to NestJS, keeping existing behavior.
 - Fixed a recurring database permission problem on a shared Rails database by replacing per-feature grants with one default-privileges setup. This gave up a read-only boundary on purpose.
@@ -18,16 +18,16 @@ Experience is counted from my first paid role (Freewire BD, September 2019). The
 
 ### Founding Engineer, MeetPure Events
 
-`Part-time · Dec 2024 – present · 1 yr 11 mos`
+`Part-time · Dec 2024 – present · {{duration 2024-12 now}}`
 
 - Working on an event and ticketing platform built with Rails, Haml, Turbo, and Stimulus, with Next.js for the landing page.
 
 ### SamuraiGeeks
 
-`Full-time · Jan 2020 – Nov 2024 · 4 yrs 11 mos`
+`Full-time · Jan 2020 – Nov 2024 · {{duration 2020-01 2024-11}}`
 
-- Senior Software Engineer, Jan 2023 – Nov 2024 · 1 yr 11 mos
-- Software Engineer, Jan 2020 – Dec 2022 · 3 yrs
+- Senior Software Engineer, Jan 2023 – Nov 2024 · {{duration 2023-01 2024-11}}
+- Software Engineer, Jan 2020 – Dec 2022 · {{duration 2020-01 2022-12}}
 
 - Built a report verification system for RUET, with QR code generation for test verification, image storage on AWS S3, and automated email and SMS notifications.
 - Developed a lab product stock management system with real-time stock tracking and a product ledger.
@@ -41,7 +41,7 @@ Tech: PHP, Laravel, MySQL, PostgreSQL, JavaScript, jQuery, React, Vue.js, Inerti
 
 ### Software Engineer, Prayers Connect
 
-`Full-time · Jul 2021 – Dec 2022 · 1 yr 6 mos`
+`Full-time · Jul 2021 – Dec 2022 · {{duration 2021-07 2022-12}}`
 
 PrayersConnect is a platform that helps Muslims find local mosques and prayer locations, view prayer times, and find community events.
 
@@ -54,7 +54,7 @@ Tech: Next.js, React, Nativebase, MUI, Jest, Expo, Redux, GitHub CI/CD, Sentry, 
 
 ### Software Engineer, ModernSoft LLC (through SamuraiGeeks)
 
-`Jan 2023 – Feb 2024 · 1 yr 2 mos`
+`Jan 2023 – Feb 2024 · {{duration 2023-01 2024-02}}`
 
 - Built RESTful APIs for a restaurant ordering application on Laravel, with a multi-tenant package serving 1,000+ shops.
 - Automated product catalog syncing from two point-of-sale systems.
@@ -67,7 +67,7 @@ Tech: PHP, Laravel, React, MySQL, Next.js, Nextra, Redis, Docker, PHPUnit, RESTf
 
 ### Software Engineer, ElmulQuran
 
-`Part-time · Sep 2020 – Oct 2020 · 2 mos`
+`Part-time · Sep 2020 – Oct 2020 · {{duration 2020-09 2020-10}}`
 
 - Designed and built the ElmulQuran app, used by 1,000+ paying users.
 - Led development of the back-end API and services.
@@ -76,7 +76,7 @@ Tech: PHP, Laravel, MySQL, JavaScript, React, React Native.
 
 ### Software Engineer (contract), Freewire BD
 
-`Sep 2019 – Dec 2020 · 1 yr 4 mos`
+`Sep 2019 – Dec 2020 · {{duration 2019-09 2020-12}}`
 
 - Designed and built a point-of-sale application with Laravel and Vue.js.
 
